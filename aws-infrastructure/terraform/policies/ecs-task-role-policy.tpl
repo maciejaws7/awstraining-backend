@@ -39,7 +39,12 @@ ${jsonencode(
         "sns:Publish"
       ],
       "Resource": "*"
-     }
+     },
+    {
+      "Effect": "Allow",
+      "Action": "s3:PutObject",
+      "Resource": "*",
+    }
   ]
 }
 )
