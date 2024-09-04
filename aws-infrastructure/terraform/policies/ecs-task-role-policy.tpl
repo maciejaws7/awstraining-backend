@@ -32,6 +32,11 @@ ${jsonencode(
         "arn:aws:ssm:${region}:232694506304:parameter/config/application*",
         "arn:aws:ssm:${region}:232694506304:parameter/config/backend*"
       ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": "s3:PutObject",
+      "Resource": "*",
     }
   ]
 }
